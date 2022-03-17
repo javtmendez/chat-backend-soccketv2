@@ -13,7 +13,7 @@ const crearUsuario=async ( req,res=response)=>{
         if(existeEmail){
             return res.status(400).json({
                 ok:false,
-                msg:'credenciales invalidas'
+                msg:'Correo ya fue utilizado'
             });
         }
 //guardar una usuario
